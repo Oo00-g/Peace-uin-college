@@ -1015,7 +1015,7 @@ shuffledImages.forEach((image, index) => {
     const carouselItem = document.createElement('div');
     carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
     carouselItem.innerHTML = `
-        <img src="images/new/${image.name}" class="d-block w-100" alt="صورة ${index + 1}" 
+        <img src="images/${image.name}" class="d-block w-100" alt="صورة ${index + 1}" 
             data-bs-toggle="tooltip" data-bs-placement="top" title="${image.class}">
     `;
     container.appendChild(carouselItem);
